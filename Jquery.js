@@ -5,3 +5,14 @@ $(document).ready(function(){
         $(this).removeClass("highlight");
     });
 });
+
+$(document).ready(function(){
+    $(".up").click(function(){
+        $("p").slideUp();
+        $("ul").slideUp();
+    });
+    $(".down").click(function(){
+        $("p").slideDown();
+        $("ul").slideDown();
+    });
+});
