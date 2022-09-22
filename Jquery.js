@@ -5,7 +5,7 @@ $( function() {
         $( "#effect" ).animate({
           backgroundColor: "#0000FF",
           color: "#fff",
-          width: 500
+          width: 700
         }, 1000 );
       } else {
         $( "#effect" ).animate({
@@ -29,11 +29,11 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".up").click(function(){
         $("p").slideUp();
-        $("ul").slideUp();
+        $(".ull").slideUp();
     });
     $(".down").click(function(){
         $("p").slideDown();
-        $("ul").slideDown();
+        $(".ull").slideDown();
     });
 });
 
