@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,206 +22,286 @@
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
-  <style>@import url("style.css");</style>
-  <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style>
+    @import url("style.css");
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <script src ="Jquery.js"></script>
+  <script src="Jquery.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
 
 <body>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
-  <div id="effect">
-    <h3>Animate</h3>
-      <button type="button" class="up">Collapse paragraphs text</button>
-      <button type="button" class="down">Show paragraphs text</button>
-      <button id="button"><strong>Animate buttons</strong></button>      
+  <div class="px-3 py-3 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul>
+      <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-right">
+        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+      </form>
+      &nbsp;&nbsp;&nbsp;
+      <div class="text-end">
+        <button type="button" class="btn btn-light text-dark me-2">Login</button>
+        <button type="button" class="btn btn-primary">Signup</button>
+      </div>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="flex-shrink-0 dropdown">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://bit.ly/3dAxTY8" alt="mdo" width="32" height="32" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2" style="">
+          <li><a class="dropdown-item" href="#">New project...</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 
+  <div class="b-example-divider"></div>
+
   <br><br>
-  <p><em>Disclaimer: this is TSI University task for HTML, CSS and SASS workshop, not for publishing anywhere on the media. Please include this disclaimer</em></p>
-  <p>&nbsp;</p>
+  <p><em>Disclaimer: this is TSI University task for HTML, CSS and SASS workshop, not for publishing anywhere on the
+      media. Please include this disclaimer</em></p>
+  <p></p>
   <p class="p1">What is Sass? Your guide to this top CSS preprocessor</p>
-  <p>&nbsp;</p>
+  <p></p>
   <p><em>By Tammy Coron January 10, 2020</em></p>
-  <p>&nbsp;</p>
+  <p></p>
   <p class="p2">Discover what Sass is, and learn how to start using it.</p>
-  <p>&nbsp;</p>
-  <p><strong><em>What is Sass? That&apos;s the question we here to answer. If you&apos;re new to web design, you&apos;ve probably heard the term floating around, but you might not be quite up to speed with exactly what Sass is, what is does, and whether or not you should be using it. In short, Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins (sometimes referred to as syntactic sugar) into regular CSS. The aim is to make the coding process simpler and more efficient. Let&apos;s explore in more detail.&nbsp;</em></strong></p>
-  <p><strong><em>&nbsp;</em></strong></p>
+  <p></p>
+  <p><strong><em>What is Sass? That&apos;s the question we here to answer. If you&apos;re new to web design, you&apos;ve
+        probably heard the term floating around, but you might not be quite up to speed with exactly what Sass is, what
+        is does, and whether or not you should be using it. In short, Sass is a CSS preprocessor, which adds special
+        features such as variables, nested rules and mixins (sometimes referred to as syntactic sugar) into regular CSS.
+        The aim is to make the coding process simpler and more efficient. Let&apos;s explore in more
+        detail.</em></strong></p>
+  <p><strong><em></em></strong></p>
   <p><strong><em>Article source: https://www.creativebloq.com/web-design/what-is-sass-111517618</em></strong></p>
-  <p>&nbsp;</p>
+  <p></p>
   <h1>What is a CSS preprocessor?</h1>
-  <p>&nbsp;</p>
-  <p>A CSS preprocessor is a scripting language that extends CSS by allowing developers to write code in one language and then compile it into CSS. Sass is perhaps the most popular preprocessor around right now, but other well-known examples include Less and Stylus.</p>
-  <p>&nbsp;</p>
-  <p>Before we go any further, a quick public service announcement is in order: most web designers would say that if you&apos;re new to CSS, you&apos;re better off avoiding Sass (or any preprocessors, extensions or frameworks) while you&apos;re still learning. While it&apos;s true they offer many advantages in speed and efficiency, it&apos;s important that you really get to grips with the basics of CSS. Make sure you learn the core concepts before you start exploring shortcuts and confusing things.</p>
-  <p>&nbsp;</p>
+  <p></p>
+  <p>A CSS preprocessor is a scripting language that extends CSS by allowing developers to write code in one language
+    and then compile it into CSS. Sass is perhaps the most popular preprocessor around right now, but other well-known
+    examples include Less and Stylus.</p>
+  <p></p>
+  <p>Before we go any further, a quick public service announcement is in order: most web designers would say that if
+    you&apos;re new to CSS, you&apos;re better off avoiding Sass (or any preprocessors, extensions or frameworks) while
+    you&apos;re still learning. While it&apos;s true they offer many advantages in speed and efficiency, it&apos;s
+    important that you really get to grips with the basics of CSS. Make sure you learn the core concepts before you
+    start exploring shortcuts and confusing things.</p>
+  <p></p>
   <h1>What is Sass?</h1>
-  <p>&nbsp;</p>
+  <p></p>
   <p><strong>Sass is arguably the most useful of all CSS extensions</strong></p>
-  <p>&nbsp;</p>
-  <p>Sass (which stands for &apos;Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more. It also helps to keep things organised and allows you to create style sheets faster.</p>
-  <p>&nbsp;</p>
-  <p>Sass is compatible with all versions of CSS. The only requirement for using it is that you must have Ruby installed. Users are also asked to follow the Sass Community Guidelines.</p>
+  <p></p>
+  <p>Sass (which stands for &apos;Syntactically awesome style sheets) is an extension of CSS that enables you to use
+    things like variables, nested rules, inline imports and more. It also helps to keep things organised and allows you
+    to create style sheets faster.</p>
+  <p></p>
+  <p>Sass is compatible with all versions of CSS. The only requirement for using it is that you must have Ruby
+    installed. Users are also asked to follow the Sass Community Guidelines.</p>
   <p>How to use Sass</p>
-  <p>&nbsp;</p>
-  <p>In the following section, we&apos;ll outline some basic tips for using Sass, using examples from the official Sass website. Take a look at the Sass Documentation for additional references and examples.</p>
+  <p></p>
+  <p>In the following section, we&apos;ll outline some basic tips for using Sass, using examples from the official Sass
+    website. Take a look at the Sass Documentation for additional references and examples.</p>
   <h1>Syntax</h1>
-  <p>&nbsp;</p>
+  <p></p>
   <p><strong>Sass includes two syntax options:</strong></p>
-  <p>&nbsp;</p>
+  <p></p>
   <ul>
-      <li>SCSS (Sassy CSS): Uses the .scss file extension and is fully compliant with CSS syntax</li>
-      <li>Indented (simply called &apos;Sass&apos;): Uses .sass file extension and indentation rather than brackets; it is not fully compliant with CSS syntax, but it&apos;s quicker to write</li>
+    <li>SCSS (Sassy CSS): Uses the .scss file extension and is fully compliant with CSS syntax</li>
+    <li>Indented (simply called &apos;Sass&apos;): Uses .sass file extension and indentation rather than brackets; it is
+      not fully compliant with CSS syntax, but it&apos;s quicker to write</li>
   </ul>
-  <p>&nbsp;</p>
+  <p></p>
   <p><em>Note that files can be converted from one syntax to the other using the sass-convert command.</em></p>
-  <p><em>&nbsp;</em></p>
+  <p><em></em></p>
   <h1>Variables</h1>
-  <p>&nbsp;</p>
-  <p>Just like other programming languages, Sass allows the use of variables that can store information you can use throughout your style sheet. For example, you can store a colour value in a variable at the top of the file, and then use this variable when setting the colour of your elements. This enables you to quickly change your colours without having to modify each line separately.</p>
-  <p>&nbsp;</p>
+  <p></p>
+  <p>Just like other programming languages, Sass allows the use of variables that can store information you can use
+    throughout your style sheet. For example, you can store a colour value in a variable at the top of the file, and
+    then use this variable when setting the colour of your elements. This enables you to quickly change your colours
+    without having to modify each line separately.</p>
+  <p></p>
   <p><strong>For example:</strong></p>
-  <p>&nbsp;</p>
-  <p><em>$font-stack: &nbsp; &nbsp;Helvetica, sans-serif;</em></p>
+  <p></p>
+  <p><em>$font-stack: &nbsp;Helvetica, sans-serif;</em></p>
   <p><em>$primary-color: #333;</em></p>
-  <p><em>&nbsp;</em></p>
+  <p><em></em></p>
   <p><em>body {</em></p>
-  <p><em>&nbsp; font: 100% $font-stack;</em></p>
-  <p><em>&nbsp; color: $primary-color;</em></p>
+  <p><em> font: 100% $font-stack;</em></p>
+  <p><em> color: $primary-color;</em></p>
   <p><em>}</em></p>
-  <p><em>&nbsp;</em></p>
+  <p><em></em></p>
   <p><em>The following CSS will be produced:</em></p>
-  <p><em>&nbsp;</em></p>
+  <p><em></em></p>
   <p><em>body {</em></p>
-  <p><em>&nbsp; font: 100% Helvetica, sans-serif;</em></p>
-  <p><em>&nbsp; color: #333;</em></p>
+  <p><em> font: 100% Helvetica, sans-serif;</em></p>
+  <p><em> color: #333;</em></p>
   <p><em>}</em></p>
-  <p>&nbsp;</p>
+  <p></p>
   <h1>Nesting</h1>
-  <p>&nbsp;</p>
-  <p>Nesting is a double-edged sword. While it provides an excellent method for reducing the amount of code you need to write, it can also lead to over-qualified CSS if not executed carefully. The idea is to nest your CSS selectors in such a way as to mimic your HTML hierarchy.</p>
-  <p>&nbsp;</p>
+  <p></p>
+  <p>Nesting is a double-edged sword. While it provides an excellent method for reducing the amount of code you need to
+    write, it can also lead to over-qualified CSS if not executed carefully. The idea is to nest your CSS selectors in
+    such a way as to mimic your HTML hierarchy.</p>
+  <p></p>
   <p>The following shows a basic navigation style that uses nesting:</p>
-  <p>&nbsp;</p>
+  <p></p>
   <p><em>nav {</em></p>
-  <p><em>&nbsp; ul {</em></p>
-  <p><em>&nbsp; &nbsp; &nbsp;margin: 0;</em></p>
-  <p><em>&nbsp; &nbsp; &nbsp;padding: 0;</em></p>
-  <p><em>&nbsp; &nbsp; &nbsp;list-style: none;</em></p>
-  <p><em>&nbsp; }</em></p>
-  <p><em>&nbsp;</em></p>
-  <p><em>&nbsp; li { display: inline-block; }</em></p>
-  <p><em>&nbsp;</em></p>
-  <p><em>&nbsp; a {</em></p>
-  <p><em>&nbsp; &nbsp; &nbsp;display: block;</em></p>
-  <p><em>&nbsp; &nbsp; &nbsp;padding: 6px 12px;</em></p>
-  <p><em>&nbsp; &nbsp; &nbsp;text-decoration: none;</em></p>
-  <p><em>&nbsp; }</em></p>
+  <p><em> ul {</em></p>
+  <p><em> &nbsp; &nbsp;margin: 0;</em></p>
+  <p><em> &nbsp; &nbsp;padding: 0;</em></p>
+  <p><em> &nbsp; &nbsp;list-style: none;</em></p>
+  <p><em> }</em></p>
+  <p><em></em></p>
+  <p><em> li { display: inline-block; }</em></p>
+  <p><em></em></p>
+  <p><em> a {</em></p>
+  <p><em> &nbsp; &nbsp;display: block;</em></p>
+  <p><em> &nbsp; &nbsp;padding: 6px 12px;</em></p>
+  <p><em> &nbsp; &nbsp;text-decoration: none;</em></p>
+  <p><em> }</em></p>
   <p><em>}</em></p>
-  <p>&nbsp;</p>
+  <p></p>
   <p><strong>The CSS output is as follows:</strong></p>
-  <p>&nbsp;</p>
+  <p></p>
   <p><em>nav ul {</em></p>
-  <p><em>&nbsp; margin: 0;</em></p>
-  <p><em>&nbsp; padding: 0;</em></p>
-  <p><em>&nbsp; list-style: none;</em></p>
+  <p><em> margin: 0;</em></p>
+  <p><em> padding: 0;</em></p>
+  <p><em> list-style: none;</em></p>
   <p><em>}</em></p>
-  <p><em>&nbsp;</em></p>
+  <p><em></em></p>
   <p><em>nav li {</em></p>
-  <p><em>&nbsp; display: inline-block;</em></p>
+  <p><em> display: inline-block;</em></p>
   <p><em>}</em></p>
-  <p><em>&nbsp;</em></p>
+  <p><em></em></p>
   <p><em>nav a {</em></p>
-  <p><em>&nbsp; display: block;</em></p>
-  <p><em>&nbsp; padding: 6px 12px;</em></p>
-  <p><em>&nbsp; text-decoration: none;</em></p>
+  <p><em> display: block;</em></p>
+  <p><em> padding: 6px 12px;</em></p>
+  <p><em> text-decoration: none;</em></p>
   <p><em>}</em></p>
-  <p>&nbsp;</p>
+  <p></p>
   <h1>Partials</h1>
-  <p>&nbsp;</p>
-  <p>Partials are smaller Sass files that can be imported (see next section) into other Sass files. Think of partials as code snippets. With these code snippets, your CSS can now be modular and easier to maintain. A partial is designated as such by naming it with a leading underscore: _partial.scss.</p>
+  <p></p>
+  <p>Partials are smaller Sass files that can be imported (see next section) into other Sass files. Think of partials as
+    code snippets. With these code snippets, your CSS can now be modular and easier to maintain. A partial is designated
+    as such by naming it with a leading underscore: _partial.scss.</p>
   <p>Import</p>
-  <p>&nbsp;</p>
-  <p>Used with Partials (see previous section), the @import directive allows you to import your partial files into the current file, to build one single CSS file. Be mindful of how many imports you&apos;re using as an HTTP request will be generated for each one.</p>
-  <p>&nbsp;</p>
+  <p></p>
+  <p>Used with Partials (see previous section), the @import directive allows you to import your partial files into the
+    current file, to build one single CSS file. Be mindful of how many imports you&apos;re using as an HTTP request will
+    be generated for each one.</p>
+  <p></p>
   <p>// _reset.scss</p>
-  <p>&nbsp;</p>
+  <p></p>
   <p><em>html,</em></p>
   <p><em>body,</em></p>
   <p><em>ul,</em></p>
   <p><em>ol {</em></p>
-  <p><em>&nbsp; &nbsp; margin: 0;</em></p>
-  <p><em>&nbsp; padding: 0;</em></p>
+  <p><em> margin: 0;</em></p>
+  <p><em> padding: 0;</em></p>
   <p><em>}</em></p>
-  <p>&nbsp;</p>
+  <p></p>
   <p>// basefile.scss</p>
-  <p>&nbsp;</p>
+  <p></p>
   <p>@import &apos;reset&apos;;</p>
-  <p>&nbsp;</p>
+  <p></p>
   <p><em>body {</em></p>
-  <p><em>&nbsp; font: 100% Helvetica, sans-serif;</em></p>
-  <p><em>&nbsp; background-color: #efefef;</em></p>
+  <p><em> font: 100% Helvetica, sans-serif;</em></p>
+  <p><em> background-color: #efefef;</em></p>
   <p><em>}</em></p>
-  <p><em>&nbsp;</em></p>
+  <p><em></em></p>
   <p><em>And the corresponding CSS output:</em></p>
-  <p><em>&nbsp;</em></p>
+  <p><em></em></p>
   <p><em>html, body, ul, ol {</em></p>
-  <p><em>&nbsp; margin: 0;</em></p>
-  <p><em>&nbsp; padding: 0;</em></p>
+  <p><em> margin: 0;</em></p>
+  <p><em> padding: 0;</em></p>
   <p><em>}</em></p>
-  <p><em>&nbsp;</em></p>
+  <p><em></em></p>
   <p><em>body {</em></p>
-  <p><em>&nbsp; font: 100% Helvetica, sans-serif;</em></p>
-  <p><em>&nbsp; background-color: #efefef;</em></p>
+  <p><em> font: 100% Helvetica, sans-serif;</em></p>
+  <p><em> background-color: #efefef;</em></p>
   <p><em>}</em></p>
-  <p>&nbsp;</p>
+  <p></p>
   <p><em>Note: When importing partials, you don&apos;t need to include the file extension or the underscore.</em></p>
-  <p>&nbsp;</p>
+  <p></p>
   <h1>Mixins</h1>
-  <p>&nbsp;</p>
-  <p><strong>One of the advantages of using preprocessors is their ability to take complex, long-winded code and simplify it. This is where mixins come in handy!&nbsp;</strong></p>
-  <p>&nbsp;</p>
-  <p>For example, if you need to include the vendor prefixes, you can use a mixin instead. Take a look at this example for border-radius:</p>
-  <p>&nbsp;</p>
+  <p></p>
+  <p><strong>One of the advantages of using preprocessors is their ability to take complex, long-winded code and
+      simplify it. This is where mixins come in handy!</strong></p>
+  <p></p>
+  <p>For example, if you need to include the vendor prefixes, you can use a mixin instead. Take a look at this example
+    for border-radius:</p>
+  <p></p>
   <p><em>@mixin border-radius($radius) {</em></p>
-  <p><em>&nbsp; -webkit-border-radius: $radius;</em></p>
-  <p><em>&nbsp; &nbsp; &nbsp; -moz-border-radius: $radius;</em></p>
-  <p><em>&nbsp; &nbsp; &nbsp; &nbsp;-ms-border-radius: $radius;</em></p>
-  <p><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;border-radius: $radius;</em></p>
+  <p><em> -webkit-border-radius: $radius;</em></p>
+  <p><em>&nbsp; &nbsp; -moz-border-radius: $radius;</em></p>
+  <p><em> &nbsp; &nbsp; &nbsp;-ms-border-radius: $radius;</em></p>
+  <p><em> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;border-radius: $radius;</em></p>
   <p><em>}</em></p>
-  <p><em>&nbsp;</em></p>
+  <p><em></em></p>
   <p><em>.box { @include border-radius(10px); }</em></p>
-  <p>&nbsp;</p>
-  <p>Notice the @mixin directive at the top. It has been given the name border-radius and uses the variable $radius as its parameter. This variable is used to set the radius value for each element.&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>Later, the @include directive is called, along with the mixin name (border-radius) and a parameter (10px). Thus .box { @include border-radius(10px); }.</p>
-  <p>&nbsp;</p>
+  <p></p>
+  <p>Notice the @mixin directive at the top. It has been given the name border-radius and uses the variable $radius as
+    its parameter. This variable is used to set the radius value for each element.</p>
+  <p></p>
+  <p>Later, the @include directive is called, along with the mixin name (border-radius) and a parameter (10px). Thus
+    .box { @include border-radius(10px); }.</p>
+  <p></p>
   <p><strong>The following CSS is produced:</strong></p>
-  <p>&nbsp;</p>
+  <p></p>
   <p><em>.box {</em></p>
-  <p><em>&nbsp; -webkit-border-radius: 10px;</em></p>
-  <p><em>&nbsp; -moz-border-radius: 10px;</em></p>
-  <p><em>&nbsp; -ms-border-radius: 10px;</em></p>
-  <p><em>&nbsp; border-radius: 10px;</em></p>
+  <p><em> -webkit-border-radius: 10px;</em></p>
+  <p><em> -moz-border-radius: 10px;</em></p>
+  <p><em> -ms-border-radius: 10px;</em></p>
+  <p><em> border-radius: 10px;</em></p>
   <p><em>}</em></p>
-  <p>&nbsp;</p>
+  <p></p>
   <h1>Extend/Inheritance</h1>
-  <p>&nbsp;</p>
-  <p>The @extend directive has been called one of Sass&apos; most powerful features. After seeing it in action, it&apos;s clear why.</p>
-  <p>&nbsp;</p>
-  <p>The idea is that with this directive you won&apos;t have to include multiple class names on your HTML elements and can keep your code DRY (don&apos;t repeat yourself). Your selectors can inherit the styles of other selectors, and then be easily extended when required. Now that&apos;s powerful.</p>
+  <p></p>
+  <p>The @extend directive has been called one of Sass&apos; most powerful features. After seeing it in action,
+    it&apos;s clear why.</p>
+  <p></p>
+  <p>The idea is that with this directive you won&apos;t have to include multiple class names on your HTML elements and
+    can keep your code DRY (don&apos;t repeat yourself). Your selectors can inherit the styles of other selectors, and
+    then be easily extended when required. Now that&apos;s powerful.</p>
   <p>Operators</p>
-  <p>&nbsp;</p>
-  <p>Having the ability to perform calculations in your CSS allows you to do more, like convert pixel values into percentages. You&apos;ll have access to standard maths functions like addition, subtraction, multiplication and division. Of course, these functions can be combined to create complex calculations.</p>
-  <p>&nbsp;</p>
-  <p>In addition, Sass includes a few built-in functions to help manipulate numbers. Functions like percentage(), floor() and round() to name a few.</p>
-  <p>&nbsp;</p>
+  <p></p>
+  <p>Having the ability to perform calculations in your CSS allows you to do more, like convert pixel values into
+    percentages. You&apos;ll have access to standard maths functions like addition, subtraction, multiplication and
+    division. Of course, these functions can be combined to create complex calculations.</p>
+  <p></p>
+  <p>In addition, Sass includes a few built-in functions to help manipulate numbers. Functions like percentage(),
+    floor() and round() to name a few.</p>
+  <p></p>
   <h1>Tammy Coron</h1>
-  <p>&nbsp;</p>
-  <p><strong>Tammy is an independent creative professional and the host of Roundabout: Creative Chaos. She&rsquo;s also the owner of Just Write Code, an independent production company located in West Tennessee. For more information about Tammy, visit her website by clicking the icons above.&nbsp;</strong></p>
-  
+  <p></p>
+  <p><strong>Tammy is an independent creative professional and the host of Roundabout: Creative Chaos. She&rsquo;s also
+      the owner of Just Write Code, an independent production company located in West Tennessee. For more information
+      about Tammy, visit her website by clicking the icons above.</strong></p>
+
 </body>
+
 </html>
